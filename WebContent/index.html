@@ -1,0 +1,272 @@
+<!doctype html>
+    <head>
+        
+        <script>
+        window.history.forward();
+    	</script>
+    
+        <title>Online Evaluation</title>
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <link rel="stylesheet" href="style.css">
+	
+    </head>
+    
+    <body> 
+		
+		
+		
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+
+               
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+<ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="#About">About Us</a></li>
+<li><a href="#Feedback">Feedback</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+      
+<header id="home" class="home" >
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-6 col-md-offset-6 col-sm-12 col-xs-12">
+<div class="home-content sections">
+
+<h1>Online Evaluation System</h1>
+                            
+<a  href="javascript:myFunction1();"><button class="btn btn-default btn-lg">Login</button></a>
+<a  href="javascript:myFunction2();"><button class="btn btn-primary btn-lg">Sign up</button></a>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</header>
+
+<div class="about" id="About">
+
+<h5 style="color:white ; font-size:350% ; border-bottom: 5px solid #4CAF50 ; display:inline ;" >About us</h5>
+
+<div class="images" >
+
+<div class="gallery">
+  <a  href="">
+    <img src="student-about-back.jpg" >
+  </a>
+  <div class="desc"><h1 style="color:white ; font-size:200% ; ">Student Area</h1></div>
+  <div class="desc"><p style="color:white">This allows Students to give examination on various languages and see their scores as well as improve them .Student can update their profile easily.</p></div>
+</div>
+
+<div class="gallery" style="margin-left : 7% ;">
+  <a  href="">
+    <img src="admin-about-back.jpg" >
+  </a>
+  <div class="desc"><h1 style="color:white ; font-size:200% ; ">Admin Area</h1></div>
+  <div class="desc"><p style="color:white">This alows the administrator to have a central control over the students . Add questions , delete questions , search students etc all come under Admin Area.</p></div>
+</div>
+
+<div class="gallery" style="margin-left : 7% ;" >
+  <a  href="">
+    <img src="company-about-back.jpg">
+  </a>
+  <div class="desc"><h1 style="color:white ; font-size:200% ; ">Company Area</h1></div>
+  <div class="desc"><p style="color:white">This allows company to keep an eye on students according to their qualifications as well as grades . They can easily search students as per their requirements.</p></div>
+</div>
+
+</div>
+
+
+<div class="feedback" id="Feedback">
+<h5 style="color:white ; font-size:350% ; border-bottom: 5px solid #4CAF50 ; display:inline ;" >Feedback</h5>
+<p style="color:white ; font-size : 150% ; margin-top: 25px ;">We would love to hear from you</p>
+
+<form style="margin-top : 50px" action="feedback.jsp" method="post">
+  
+  <input type="text" name="name" id="name" placeholder="Name" required/>
+  <input type="email" name="email" id="name" maxlength="100" placeholder="Email" required/>
+  <input type="text" name="subject" id="name" maxlength="150" placeholder="Subject" required/>
+  <textarea rows="5" cols="40" name="message" maxlength="500" placeholder="Message"></textarea><br>
+  <button  type="submit" class="btn btn-primary btn-lg">Send Feedback</button>
+	
+  </form>
+
+</div>
+
+
+
+
+
+</div>
+
+<footer>Made By : Vasu Gupta</footer>
+		
+  <div id="loginMain" style="display : none" >
+  <main>
+  <input id="tab1" type="radio" name="tabs1" checked>
+  <label for="tab1">Student</label>
+    
+  <input id="tab2" type="radio" name="tabs1">
+  <label for="tab2">Admin</label>
+    
+  <input id="tab3" type="radio" name="tabs1">
+  <label for="tab3">Company</label>
+    
+  <section id="content1">
+	
+    <form action="student_login.jsp">
+    <input type="email" id="email" name="email" placeholder="Student Email" required>
+    <input type="password" id="password" name="password" placeholder="Password" required> 
+  	
+	<div>
+    <button  type="submit" class="btn btn-primary btn-lg">Login</button>
+	<button  type="button" onclick="javascript:myFunction1();" class="btn btn-primary btn-lg">Cancel</button>
+	</div>
+  </form>
+  	<p></p>
+  	
+  	<a href="forgot_password.jsp">Forgot Password?</a>
+  
+  </section>
+    
+  <section id="content2">
+   
+	<form action="admin_login.jsp">
+    <input type="email" id="email" name="email" placeholder="Admin Email" required>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+  	
+    <div>
+    <button  type="submit" class="btn btn-primary btn-lg">Login</button>
+	<button  type="button" onclick="javascript:myFunction1();" class="btn btn-primary btn-lg">Cancel</button>
+	</div>
+	</form>
+   
+  </section>
+    
+  <section id="content3">
+  
+	<form action="company_login.jsp">
+    <input type="text" id="name" name="companyName" placeholder="Comapny Name" required >
+    <input type="password" id="password" name="password" placeholder="Password" required >
+  	
+    <div>
+    <button  type="submit" class="btn btn-primary btn-lg">Login</button>
+	<button  type="button" onclick="javascript:myFunction1();" class="btn btn-primary btn-lg">Cancel</button>
+	</div>
+	
+  </form>
+    
+  </section>
+</main>
+</div>
+
+
+<div id="signupMain" style="display : none" >
+<main>
+  <input id="tab4" type="radio" name="tabs2" checked>
+  <label for="tab4">Student</label>
+    
+  <input id="tab5" type="radio" name="tabs2">
+  <label for="tab5">Company</label>
+  
+  <section id="content4">
+	
+  <form action="signup.jsp" method="post">
+  
+  <input type="text" name="name" id="name" placeholder="Name" required/>
+  <input type="email" name="email" id="name" placeholder="Email" required/>
+  <input type="password" name="password" id="name" placeholder="Password" required/>
+  <input type="number" name="mobile" id="name" placeholder="Mobile" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required/>
+  <input type="text" name="city" id="name" placeholder="City" required/>
+  
+  <select class="selction" name="qualification">
+  <option selected disabled>Select Qualification</option>
+  <option>BTech</option>
+  <option>MCA</option>
+  <option>BCA</option>
+  <option>Others</option>
+  </select>
+  <br>
+  <select class="selction" name="year">
+  <option>Select Year</option>
+  <option>2014-2015</option>
+  <option>2015-2016</option>
+  <option>2016-2017</option>
+  <option>Pursuing</option>
+  </select>
+  <br>
+  <select class="selction" name="gender">
+  <option>Male</option>
+  <option>Female</option>
+  </select>
+  
+	<div>
+    <button  type="submit" class="btn btn-primary btn-lg">Sign up</button>
+	<button  type="button" onclick="javascript:myFunction2();" class="btn btn-primary btn-lg">Cancel</button>
+	</div>
+  </form>
+  
+  </section>
+    
+  <section id="content5">
+   
+  <form action="signup.jsp" method="post"> 
+	
+  <input type="text" name="companyName" id="name" placeholder="Comapny Name" required/>
+  <input type="password" name="password" id="name" placeholder="Password" required/>
+  <input type="text" name="address" id="name" placeholder="Address" required/>
+  <select class="selction" name="companyType">
+  <option>Product Based</option>
+  <option>Service Based</option>
+  </select>
+  
+    <div>
+    <button  type="submit" class="btn btn-primary btn-lg">Sign up</button>
+	<button  type="button" onclick="javascript:myFunction2();" class="btn btn-primary btn-lg">Cancel</button>
+	</div>
+	</form>
+   
+  </section>
+    
+ 
+</main>
+
+</div>
+
+</body>
+
+<script>
+	function myFunction1() {
+    var x = document.getElementById('loginMain');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+	}
+	
+	function myFunction2() {
+    var x = document.getElementById('signupMain');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+	}
+
+	
+    
+</script>
+
+</html>
